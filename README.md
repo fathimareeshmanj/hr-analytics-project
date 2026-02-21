@@ -33,43 +33,74 @@ Advanced Queries:
 **TABLES**
 
 CREATE DATABASE hr_analytics;
+
 USE hr_analytics;
+
 CREATE TABLE departments (
+
     dept_id INT PRIMARY KEY,
+	
     dept_name VARCHAR(50)
 );
+
+
 CREATE TABLE jobs (
+
     job_id INT PRIMARY KEY,
+	
     job_title VARCHAR(50)
+	
 );
+
 CREATE TABLE employees (
+
     emp_id INT PRIMARY KEY,
+	
     emp_name VARCHAR(50),
+	
     gender VARCHAR(10),
     age INT,
+	
     dept_id INT,
+	
     job_id INT,
+	
     hire_date DATE,
+	
     attrition VARCHAR(5),   -- Yes / No
+	
     FOREIGN KEY (dept_id) REFERENCES departments(dept_id),
+	
     FOREIGN KEY (job_id) REFERENCES jobs(job_id)
+	
 );
+
 CREATE TABLE salaries (
+
     emp_id INT,
+	
     salary INT,
+	
     FOREIGN KEY (emp_id) REFERENCES employees(emp_id)
 );
+
 CREATE TABLE performance (
+
     emp_id INT,
+	
     performance_rating INT,   -- 1 to 5
+	
     years_at_company INT,
+	
     FOREIGN KEY (emp_id) REFERENCES employees(emp_id)
 );
+
 
 
 **VALUE INSERT**
 
 INSERT INTO departments VALUES
+
 (1,'HR'),(2,'IT'),(3,'Sales'),(4,'Finance');
 INSERT INTO jobs VALUES
 (1,'HR Executive'),

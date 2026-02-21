@@ -1,4 +1,4 @@
-# hr-analytics-project
+# hr-analytics-project mysql
 **HR Analytics Project:**
 
 This project uses MySQL to analyze employee attrition data and identify key factors affecting workforce turnover, supporting data-driven HR decisions.

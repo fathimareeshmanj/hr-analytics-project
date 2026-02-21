@@ -1,8 +1,8 @@
 # hr-analytics-project
-**HR Analytics Project:**
+HR Analytics Project:
 This project uses MySQL to analyze employee attrition data and identify key factors affecting workforce turnover, supporting data-driven HR decisions.
 
-**KEY OBJECTIVES**
+KEY OBJECTIVES
 Analyze employee attrition using MySQL
 Identify departments and roles with high turnover
 Understand the impact of salary and experience on attrition

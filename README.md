@@ -28,6 +28,64 @@ Intermediate Queries:
 Advanced Queries: 
 		CTE, Sub query, Window function ,
 		 Functions , Store procedures, Views
+
+
+**TABLES**
+
+CREATE DATABASE hr_analytics;
+USE hr_analytics;
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50)
+);
+CREATE TABLE jobs (
+    job_id INT PRIMARY KEY,
+    job_title VARCHAR(50)
+);
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50),
+    gender VARCHAR(10),
+    age INT,
+    dept_id INT,
+    job_id INT,
+    hire_date DATE,
+    attrition VARCHAR(5),   -- Yes / No
+    FOREIGN KEY (dept_id) REFERENCES departments(dept_id),
+    FOREIGN KEY (job_id) REFERENCES jobs(job_id)
+);
+CREATE TABLE salaries (
+    emp_id INT,
+    salary INT,
+    FOREIGN KEY (emp_id) REFERENCES employees(emp_id)
+);
+CREATE TABLE performance (
+    emp_id INT,
+    performance_rating INT,   -- 1 to 5
+    years_at_company INT,
+    FOREIGN KEY (emp_id) REFERENCES employees(emp_id)
+);
+
+
+**VALUE INSERT**
+
+INSERT INTO departments VALUES
+(1,'HR'),(2,'IT'),(3,'Sales'),(4,'Finance');
+INSERT INTO jobs VALUES
+(1,'HR Executive'),
+(2,'Software Engineer'),
+(3,'Sales Executive'),
+(4,'Accountant');
+INSERT INTO employees VALUES
+(101,'Asha','Female',26,2,2,'2021-06-10','Yes'),
+(102,'Rahul','Male',30,3,3,'2020-01-15','No'),
+(103,'Sneha','Female',24,2,2,'2022-08-01','Yes'),
+(104,'Vikram','Male',35,4,4,'2018-03-20','No'),
+(105,'Neha','Female',29,1,1,'2019-11-11','No');
+INSERT INTO salaries VALUES
+(101,35000),(102,45000),(103,32000),(104,60000),(105,40000);
+INSERT INTO performance VALUES
+(101,3,2),(102,4,4),(103,2,1),(104,5,6),(105,4,5);
 		 
 **SCHEMA- STAR SCHEMA –HR DATABASE**
      
@@ -88,6 +146,8 @@ Salaries – Stores employee salary, bonus, and year-wise compensation details
 
 
 <img width="1022" height="237" alt="image" src="https://github.com/user-attachments/assets/090385ff-94cd-460a-80ad-b52d969aa51e" />
+
+
 
 
 

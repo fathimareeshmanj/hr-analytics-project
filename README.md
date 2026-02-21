@@ -35,12 +35,20 @@ Advanced Queries:
 
 **Constraints**
 
-Unique Key A unique key in MySQL is a single field or combination of fields that ensure all values going to store into the column will be unique. It means a column cannot stores duplicate 
+Unique Key:
+
+A unique key in MySQL is a single field or combination of fields that ensure all values going to store into the column will be unique. It means a column cannot stores duplicate
+
 Primary Key:
+
 MySQL primary key is a single or combination of the field, which is used to identify each record in a table uniquely. If the column contains primary key constraints, then it cannot be null or empty. A table may have duplicate columns, but it can contain only one primary key. It always contains unique value into a column.
+
 Foreign Key:
+
 The foreign key is used to link one or more than one table together. It is also known as the referencing key. A foreign key matches the primary key field of another table. It means a foreign key field in one table refers to the primary key field of the other table. It identifies each row of another table uniquely that maintains the referential integrity in MySQL.
+
 NOT NULL:
+
 The NOT NULL constraint is a column constraint that ensures values stored in a column are not NULL.
 
 

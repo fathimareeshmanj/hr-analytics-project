@@ -37,11 +37,9 @@ CREATE DATABASE hr_analytics;
 USE hr_analytics;
 
 CREATE TABLE departments (
-
-    dept_id INT PRIMARY KEY,
-	
-    dept_name VARCHAR(50)
-);
+	dept_id INT PRIMARY KEY,
+	dept_name VARCHAR(50)
+	);
 
 
 CREATE TABLE jobs (

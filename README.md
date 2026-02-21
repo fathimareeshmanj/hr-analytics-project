@@ -57,13 +57,44 @@ Employees – Stores employee personal details, department, job role, experience
 
 Departments – Contains department IDs and department names
 
-Job_Roles – Stores job role IDs and role names
+Job_Roles – Stores job role IDs and role names<img width="970" height="258" alt="image" src="https://github.com/user-attachments/assets/d0d4a724-0c24-4ddf-b099-df1c847c97fc" />
+
 
 Salaries – Stores employee salary, bonus, and year-wise compensation details
 
-SELECT * from departments;
+**SELECT * from departments;**
 
 <img width="970" height="336" alt="image" src="https://github.com/user-attachments/assets/7ade000a-1866-4ab4-89bd-fae89052eac7" />
+
+
+**SELECT * FROM employees;**
+
+<img width="1035" height="287" alt="Screenshot 2026-02-21 154429" src="https://github.com/user-attachments/assets/6947f169-8d60-4dc6-90b1-6afc1f028c5b" />
+
+
+**SELECT * FROM jobs;**
+
+
+<img width="970" height="258" alt="image" src="https://github.com/user-attachments/assets/0dc532c1-f1ac-4ab2-9880-4bb91170225f" />
+
+**SELECT * FROM performance;**
+
+
+<img width="993" height="237" alt="image" src="https://github.com/user-attachments/assets/75265e0d-9030-485f-a5e2-0df13f66a127" />
+
+
+**SELECT * FROM salaries;**
+
+
+
+<img width="1022" height="237" alt="image" src="https://github.com/user-attachments/assets/090385ff-94cd-460a-80ad-b52d969aa51e" />
+
+
+
+
+
+
+
 
 
 
